@@ -1,2 +1,1 @@
-# docker-cobol-sample
-Écriture d'un microservice Docker en langage COBOL
+# COBOL running in a Docker Container on Debian (version HTTPD PHP)
