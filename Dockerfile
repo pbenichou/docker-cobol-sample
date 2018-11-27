@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y apache2
 COPY resources/httpd.conf /etc/httpd/conf/httpd.conf
 
-RUN apt-get install -y php
+RUN apt-get install -y php5
 COPY src/php/index.php /var/www/html/
 
 RUN apt-get install -y open-cobol
