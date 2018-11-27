@@ -15,6 +15,6 @@ RUN cobc -free -x -o sample /cobol/sample.cbl -L/usr/lib64/ -ldb
 
 RUN apt-get clean
 
-EXPOSE 8080
-
 CMD apachectl -D FOREGROUND
+
+EXPOSE 80
