@@ -15,8 +15,8 @@ COPY src/php/index.php /var/www/html/
 # Installation de l'applicatif COBOL (copie, compilation)
 RUN apt-get install -y open-cobol
 RUN mkdir /cobol/
-COPY src/COBOL/myCOBOLapp.cbl /cobol/
-RUN cobc -free -x -o myCOBOLapp /cobol/myCOBOLapp.cbl -L/usr/lib64/ -ldb
+COPY src/cobol/sample.cbl /cobol/
+RUN cobc -free -x -o sample /cobol/sample.cbl -L/usr/lib64/ -ldb
 
 # Supprimer les paquets installés comme dépendances inutiles
 RUN apt-get clean
