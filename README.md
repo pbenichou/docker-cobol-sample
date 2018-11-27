@@ -1,2 +1,2 @@
 # docker-cobol-sample
-Microservice Docker en langage COBOL
+Écriture d'un microservice Docker en langage COBOL
