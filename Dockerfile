@@ -1,6 +1,7 @@
 FROM debian:jessie
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update
+RUN apt-get upgrade
 
 RUN apt-get install -y apache2
 COPY resources/httpd.conf /etc/httpd/conf/httpd.conf
