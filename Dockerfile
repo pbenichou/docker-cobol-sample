@@ -15,7 +15,7 @@ RUN cobc -free -x -o sample /cobol/sample.cbl -L/usr/lib64/ -ldb
 
 RUN apt-get clean
 
+EXPOSE 8080
+
 ENTRYPOINT ["/usr/sbin/apache2"]
 CMD ["-D", "FOREGROUND"]
-
-EXPOSE 8080
