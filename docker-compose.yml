@@ -1,5 +1,0 @@
-app:
-  image: pbenichou/docker-cobol-sample
-  container_name: docker-cobol-sample
-  ports:
-- "8080:8080"
